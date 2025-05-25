@@ -89,7 +89,7 @@ public class main {
 
         System.out.println("Harf Notu: " + harfNot);
 
-        input.close();
+
 
 
 
@@ -116,5 +116,34 @@ public class main {
         for (int i = 0; i < sayilar.length; i++) {
             System.out.println("Dizi elemanı [" + i + "]: " + sayilar[i]);
         }
+
+
+
+
+        // En büyük sayıyı bulma
+        System.out.print("\n1. sayıyı girin: ");
+        int s1 = input.nextInt();
+
+        System.out.print("2. sayıyı girin: ");
+        int s2 = input.nextInt();
+
+        System.out.print("3. sayıyı girin: ");
+        int s3 = input.nextInt();
+
+        int enBuyuk;
+
+        if (s1 >= s2 && s1 >= s3) {
+            enBuyuk = s1;
+        } else if (s2 >= s1 && s2 >= s3) {
+            enBuyuk = s2;
+        } else {
+            enBuyuk = s3;
+        }
+
+        System.out.println("En büyük sayı: " + enBuyuk);
+
+        input.close();
+
+
     }
 }

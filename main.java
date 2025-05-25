@@ -100,11 +100,21 @@ public class main {
 
 
         //while döngüsü
-        int sayac = 10; //
+        int sayac = 10;
 
         while (sayac >= 1) {
             System.out.println(sayac);
             sayac--;
+        }
+
+
+
+        // 5 elemanlı dizi
+        int[] sayilar = {10, 20, 30, 40, 50};
+
+
+        for (int i = 0; i < sayilar.length; i++) {
+            System.out.println("Dizi elemanı [" + i + "]: " + sayilar[i]);
         }
     }
 }

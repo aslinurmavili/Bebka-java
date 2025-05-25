@@ -90,5 +90,12 @@ public class main {
         System.out.println("Harf Notu: " + harfNot);
 
         input.close();
+
+
+
+        //For göngüsü
+        for (int i=1; i<=10; i++) {
+            System.out.println(i);
+        }
     }
 }

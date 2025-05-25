@@ -10,7 +10,6 @@ public class main {
         boolean mezunMu = true;
         char cinsiyet = 'K';
 
-        // final ile tanımlanan değişkenin değeri sonradan değiştirilemez (sabit)
         final double PI = 3.14159;
 
         System.out.println("Ad Soyad: " + adSoyad);
@@ -21,22 +20,21 @@ public class main {
         System.out.println("Cinsiyet: " + cinsiyet);
         System.out.println("Pi sayısı (sabit): " + PI);
 
-
-
-
-
-        //Aritmetik işlemler + kullanıcıdan veri alma + if-else kullanımı
         Scanner input = new Scanner(System.in);
-        System.out.println("Birinci sayıyı girin: ");
-        double sayi1 = input.nextDouble(); //nextDouble() ile kullanıcıdan ondalıklı veya tam sayılar alınabilir.
 
-        System.out.println("İkinci sayıyı girin: ");
+
+
+        // Aritmetik işlemler
+        System.out.print("Birinci sayıyı girin: ");
+        double sayi1 = input.nextDouble();
+
+        System.out.print("İkinci sayıyı girin: ");
         double sayi2 = input.nextDouble();
 
         double toplam = sayi1 + sayi2;
         double fark = sayi1 - sayi2;
         double carpim = sayi1 * sayi2;
-        double bolum = sayi2 != 0 ? sayi1 / sayi2 : 0; // Sıfıra bölme kontrolü
+        double bolum = sayi2 != 0 ? sayi1 / sayi2 : 0;
 
         System.out.println("\n--- İşlem Sonuçları ---");
         System.out.println("Toplam: " + toplam);
@@ -47,6 +45,21 @@ public class main {
             System.out.println("Bölüm: " + bolum);
         } else {
             System.out.println("Bölüm: Sıfıra bölme hatası!");
+        }
+
+
+
+
+        // if-else
+        System.out.print("\nBir sayı girin: ");
+        int sayi = input.nextInt();
+
+        if (sayi > 0) {
+            System.out.println("Pozitif sayı");
+        } else if (sayi < 0) {
+            System.out.println("Negatif sayı");
+        } else {
+            System.out.println("Sayı sıfır");
         }
 
         input.close();

@@ -142,6 +142,24 @@ public class main {
 
         System.out.println("En büyük sayı: " + enBuyuk);
 
+
+
+
+        //n'e kadar olan sayıların toplamı
+
+        System.out.print("Pozitif bir sayı girin: ");
+        int n = input.nextInt();
+
+        int ntoplam = 0;
+
+        for (int i = 1; i <= n; i++) {
+            ntoplam += i;
+        }
+
+        System.out.println("1'den " + n + "'e kadar olan sayıların toplamı: " + ntoplam);
+
+
+
         input.close();
 
 

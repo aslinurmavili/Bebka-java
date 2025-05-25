@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
 
-        // Temel veri tipleri
         String adSoyad = "Aslı Nur MAVİLİ";
         int yas = 26;
         double maas = 19000.50;
         float boy = 1.58f;
         boolean mezunMu = true;
         char cinsiyet = 'K';
+
         final double PI = 3.14159;
 
         System.out.println("Ad Soyad: " + adSoyad);
@@ -21,8 +21,6 @@ public class main {
         System.out.println("Pi sayısı (sabit): " + PI);
 
         Scanner input = new Scanner(System.in);
-
-
 
         // Aritmetik işlemler
         System.out.print("\nBirinci sayıyı girin: ");
@@ -47,8 +45,6 @@ public class main {
             System.out.println("Bölüm: Sıfıra bölme hatası!");
         }
 
-
-
         // if-else
         System.out.print("\nBir sayı girin: ");
         int sayi = input.nextInt();
@@ -61,14 +57,37 @@ public class main {
             System.out.println("Sayı sıfır");
         }
 
-
-
-        // Tek/çift kontrol
+        // tek-çift kontrol
         if (sayi % 2 == 0) {
             System.out.println(sayi + " bir çift sayıdır.");
         } else {
             System.out.println(sayi + " bir tek sayıdır.");
         }
+
+        // switch-case ile harf notu
+        System.out.print("\n0-100 arasında bir not girin: ");
+        int not = input.nextInt();
+
+        char harfNot;
+        switch (not / 10) {
+            case 10:
+            case 9:
+                harfNot = 'A';
+                break;
+            case 8:
+                harfNot = 'B';
+                break;
+            case 7:
+                harfNot = 'C';
+                break;
+            case 6:
+                harfNot = 'D';
+                break;
+            default:
+                harfNot = 'F';
+        }
+
+        System.out.println("Harf Notu: " + harfNot);
 
         input.close();
     }

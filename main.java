@@ -97,5 +97,14 @@ public class main {
         for (int i=1; i<=10; i++) {
             System.out.println(i);
         }
+
+
+        //while döngüsü
+        int sayac = 10; //
+
+        while (sayac >= 1) {
+            System.out.println(sayac);
+            sayac--;
+        }
     }
 }
